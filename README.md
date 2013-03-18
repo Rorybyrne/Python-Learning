@@ -7,6 +7,26 @@
 * "If your classes Table and Chair in furn.py need to import Carpenter from workers.py to answer a question such as table.isdoneby(), and if conversely the class Carpenter needs to import Table and Chair, to answer the question carpenter.whatdo(), then you have a circular dependency"
 * **Everything is an object**
 
+##Documentation
+* Docstrings and comments are different.
+* Docstring is a literal string that is the first statement of a module/function/class/method. It is the `__doc__` attribute of the object.
+* Docstrings should describe what an object does, not how it does it.
+* Bad:
+* <pre><code>def function(a, b):
+    """function(a, b) -> list"""</pre></code>
+* Good:
+* <pre><code>def function(a, b):
+    """Do X and return a list."""</pre></code>
+* Multi-line docstrings are done like so:
+* <pre><code>def function(a, b):
+    """Do X and return a list.
+        etc.
+
+    """</pre></code>
+* With one blank line after the text of the docstring.
+
+* Comments are for describing how something works, without stating the obvious.
+
 ##Modules
 * **Good**
 <pre><code>import math
