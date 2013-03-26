@@ -24,11 +24,12 @@ class askWords:
         
         self.english = random.choice(self.pool.keys())
         self.french = self.pool[self.english]
-        
-        self.question_text.set("What is the french for " + self.english + "?")
          
         self.frame = Frame(self.master, width=455, height=150)
         self.frame.pack()
+
+    def create_mainframe(self):
+        self.question_text.set("What is the french for " + self.english + "?")
         
         self.question = Label(self.master, textvariable=self.question_text)
         self.question.pack()
@@ -124,4 +125,5 @@ if __name__ == '__main__':
     root = Tk()
     root.title('Vocabulary')
     app = askWords(root, vocab)
+    app.create_mainframe()
     root.mainloop()
