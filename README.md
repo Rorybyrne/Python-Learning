@@ -24,7 +24,7 @@
 
     """</pre></code>
 * With one blank line after the text of the docstring.
-
+* Use object.__doc__ to return the docstring for an object. `module.__doc__`, `module.class.__doc__`, `module.class.method.__doc__`, etc.
 * Comments are for describing how something works, without stating the obvious.
 
 ##Modules
